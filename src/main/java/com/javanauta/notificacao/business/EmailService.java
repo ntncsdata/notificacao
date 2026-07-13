@@ -51,7 +51,7 @@ public class EmailService {
 
 
         } catch (MessagingException | UnsupportedEncodingException e) {
-            throw new EmailException("Erro ao enviar o email", e.getCause());
+            throw new EmailException("Erro ao enviar o email", e);
         }
 
     }
